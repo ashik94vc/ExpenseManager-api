@@ -1,0 +1,17 @@
+{
+  "name": "expensemanager",
+  "version": "1.0.0",
+  "description": "Backend API for ExpenseManager Android",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashik Vetrivelu <vcashik@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.7",
+    "mongoose": "^4.5.9"
+  }
+}
