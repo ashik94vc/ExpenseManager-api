@@ -9,7 +9,7 @@ var mongoose = require('mongoose')
 mongoose.connect("mongodb://admin:root@ds147995.mlab.com:47995/expensemanager")
 var db = mongoose.connection
 db.on('error',console.error.bind(console,'connection-error'))
-db.once('open',function())
+db.once('open',function()
 {
 
 });
