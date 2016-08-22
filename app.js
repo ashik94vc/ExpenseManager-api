@@ -18,7 +18,7 @@ var expenseSchema = mongoose.Schema({
   moneySpent : Number,
   notes: String,
   timeStamp: {
-    type: String,
+    type: Number,
     unique: true,
     required: true,
   },
