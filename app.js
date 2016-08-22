@@ -29,6 +29,14 @@ var Expense = mongoose.model('expense',expenseSchema)
 app.use(bodyParser.json())
 
 var port = process.env.PORT || 8080;
+
+app.get('/',function(req,res){
+  Expense.find({},function(err,data)
+  {
+    res.send(data)
+  })
+})
+
 app.post('/addExpense',function(req,res){
   console.log(req.body)
   var expense = new Expense(req.body)
