@@ -5,6 +5,8 @@ var fs = require('fs')
 var app = express()
 var bodyParser = require('body-parser')
 
+app.use(bodyParser.json())
+
 var port = process.env.PORT || 8080;
 app.post('/addExpense',function(req,res){
   console.log(req.body)
