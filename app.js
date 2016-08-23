@@ -41,8 +41,8 @@ app.post('/updateExpense/',function(req,res){
     }
     else {
       console.log(data)
-      Expense.find({},function(err,data) {
-        res.send(data)
+      Expense.find({},function(err,consolidatedData) {
+        res.send(consolidatedData)
       })
     }
   })
