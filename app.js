@@ -34,7 +34,7 @@ app.get('/',function(req,res){
 })
 
 app.post('/updateExpense',function(req,res){
-  Expense.update({timeStamp: req.body.timeStamp},req.body,function(err,data){
+  Expense.findOneAndUpdate({timeStamp: req.body.timeStamp},req.body,function(err,data){
     if(err) {
       console.log(err)
     }
