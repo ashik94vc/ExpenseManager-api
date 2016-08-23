@@ -17,7 +17,7 @@ db.once('open',function()
 var expenseSchema = mongoose.Schema({
   moneySpent : Number,
   notes: String,
-  timeStamp: String
+  timeStamp: String,
   title: String,
 })
 
