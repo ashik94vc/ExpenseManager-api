@@ -17,7 +17,7 @@ db.once('open',function()
 var expenseSchema = mongoose.Schema({
   moneySpent : Number,
   notes: String,
-  timeStamp: String,
+  timeStamp: String
   title: String,
 })
 
@@ -40,6 +40,7 @@ app.post('/updateExpense/',function(req,res){
       console.log(err)
     }
     else {
+      console.log(data)
       Expense.find({},function(err,data) {
         res.send(data)
       })
