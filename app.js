@@ -33,15 +33,16 @@ app.get('/',function(req,res){
   })
 })
 
-app.post('/updateExpense',function(req,res){
-  Expense.findOneAndUpdate({timeStamp: req.body.timeStamp},req.body,function(err,data){
+app.post('/updateExpense/:timestamp',function(req,res){
+  Expense.findOneAndUpdate({timeStamp: req.params.timestamp},req.body,function(err,data){
+    console.log(req)
     if(err) {
       console.log(err)
     }
     else {
       console.log(data)
       Expense.find({},function(err,consolidatedData) {
-        res.send(consolidatedData)
+        res.send(req.body)
       })
     }
   })
