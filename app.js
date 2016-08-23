@@ -34,6 +34,7 @@ app.get('/',function(req,res){
 })
 
 app.post('/updateExpense',function(req,res){
+  console.log(req.body._id)
   Expense.findOneAndUpdate({_id: req.body._id},req.body,function(err,data){
     if(err) {
       console.log(err)
