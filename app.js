@@ -34,16 +34,14 @@ app.get('/',function(req,res){
 })
 
 app.post('/updateExpense',function(req,res){
-  console.log(req.body)
-  Expense.findOneAndUpdate({timeStamp: req.body.timeStamp},req.body,function(err,data){
-    if(err) {
+  Expense.find({timeStamp: req.body.timeStamp},function(err,data){
+    if(err)
+    {
       console.log(err)
     }
     else {
       console.log(data)
-      Expense.find({},function(err,consolidatedData) {
-        res.send(consolidatedData)
-      })
+      res.send(data)
     }
   })
 })
