@@ -33,9 +33,8 @@ app.get('/',function(req,res){
   })
 })
 
-app.post('/updateExpense/',function(req,res){
-  var expense = new Expense(req.body)
-  Expense.update({timeStamp: expense.timeStamp},expense,function(err,data){
+app.post('/updateExpense',function(req,res){
+  Expense.update({timeStamp: req.body.timeStamp},req.body,function(err,data){
     if(err) {
       console.log(err)
     }
