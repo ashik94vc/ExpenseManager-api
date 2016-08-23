@@ -39,7 +39,7 @@ app.get('/',function(req,res){
 
 app.post('/updateExpense/',function(req,res){
   var expense = new Expense(req.body)
-  Expense.update({timeStamp:expense.timeStamp},expense,function(err,data){
+  Expense.update({timeStamp: expense.timeStamp},expense,function(err,data){
     if(err) {
       console.log(err)
     }
@@ -57,11 +57,12 @@ app.get('/deleteExpense/:timestamp',function(req,res) {
       console.log(err)
     }
     else {
+
       Expense.find({},function(err,data) {
         res.send(data)
       })
     }
-  })
+  }).exec()
 })
 app.post('/addExpense',function(req,res){
   console.log(req.body)
