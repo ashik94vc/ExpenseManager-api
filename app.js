@@ -35,7 +35,6 @@ app.get('/',function(req,res){
 
 app.post('/updateExpense/:timestamp',function(req,res){
   Expense.findOneAndUpdate({timeStamp: req.params.timestamp},req.body,function(err,data){
-    console.log(req)
     if(err) {
       console.log(err)
     }
