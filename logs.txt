@@ -1,0 +1,101 @@
+2016-08-23T11:09:59.054848+00:00 app[web.1]:   index: 0,
+2016-08-23T11:09:59.054848+00:00 app[web.1]:   code: 66,
+2016-08-23T11:09:59.054849+00:00 app[web.1]:   errmsg: 'After applying the update to the document {_id: ObjectId(\'57bc2eeaa169780300865acd\') , ...}, the (immutable) field \'_id\' was found to have been altered to _id: ObjectId(\'57bc2f07a169780300865ace\')' }
+2016-08-23T11:10:29.016783+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=3514763b-3c41-46b8-848d-21f627e3a8e0 fwd="49.207.181.55" dyno=web.1 connect=0ms service=30001ms status=503 bytes=0
+2016-08-23T11:17:29.822341+00:00 heroku[api]: Deploy 25a182c by vcashik@gmail.com
+2016-08-23T11:17:29.825806+00:00 heroku[api]: Release v17 created by vcashik@gmail.com
+2016-08-23T11:17:30.050318+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-23T11:17:30.050328+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-23T11:17:30.039167+00:00 heroku[web.1]: Restarting
+2016-08-23T11:17:30.039858+00:00 heroku[web.1]: State changed from up to starting
+2016-08-23T11:17:31.394053+00:00 heroku[web.1]: Starting process with command `node app.js`
+2016-08-23T11:17:33.075746+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-23T11:17:33.993402+00:00 heroku[web.1]: Process exited with status 143
+2016-08-23T11:17:34.145730+00:00 app[web.1]: Listening on port18450
+2016-08-23T11:17:35.026957+00:00 heroku[web.1]: State changed from starting to up
+2016-08-23T11:18:11.469821+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=11b98d6c-cc34-4328-9434-fa217c75598b fwd="49.207.181.55" dyno=web.1 connect=0ms service=61ms status=200 bytes=1057
+2016-08-23T11:18:24.546131+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=4381075e-0538-4f41-aa61-d6104b0f9929 fwd="49.207.181.55" dyno=web.1 connect=0ms service=131ms status=200 bytes=1057
+2016-08-23T11:18:24.511027+00:00 app[web.1]: { ok: 1,
+2016-08-23T11:18:24.511039+00:00 app[web.1]:   nModified: 0,
+2016-08-23T11:18:24.511040+00:00 app[web.1]:   n: 1,
+2016-08-23T11:18:24.511042+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 0, high_: 0 },
+2016-08-23T11:18:24.511044+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T11:29:26.148601+00:00 heroku[router]: at=info method=GET path="/deleteExpense/1471846958132" host=expensemanager-test.herokuapp.com request_id=0638b92b-d1d6-4025-8700-73f718f41721 fwd="49.207.181.55" dyno=web.1 connect=0ms service=623ms status=200 bytes=1057
+2016-08-23T11:29:35.657929+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=e8ef0914-6cae-4d71-8c69-44300a8693e0 fwd="49.207.181.55" dyno=web.1 connect=0ms service=78ms status=200 bytes=1057
+2016-08-23T11:29:57.529781+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=e82e97ef-e5df-4bd8-83af-00ea09f5d3e3 fwd="49.207.181.55" dyno=web.1 connect=0ms service=52ms status=200 bytes=1057
+2016-08-23T11:30:00.667752+00:00 heroku[router]: at=info method=GET path="/deleteExpense/1471950574017" host=expensemanager-test.herokuapp.com request_id=158fe1be-e4a5-4c75-bc4d-7e0b45a4f478 fwd="49.207.181.55" dyno=web.1 connect=0ms service=79ms status=200 bytes=942
+2016-08-23T11:30:10.510550+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=79077399-3e27-4541-8786-94239aabfa52 fwd="49.207.181.55" dyno=web.1 connect=2ms service=84ms status=200 bytes=942
+2016-08-23T11:30:10.475237+00:00 app[web.1]: { ok: 1,
+2016-08-23T11:30:10.475245+00:00 app[web.1]:   nModified: 0,
+2016-08-23T11:30:10.475246+00:00 app[web.1]:   n: 0,
+2016-08-23T11:30:10.475250+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 0, high_: 0 },
+2016-08-23T11:30:10.475252+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T11:50:32.274682+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=b7dc64bc-0b5c-42fa-b631-4f8e47d13f33 fwd="49.207.181.55" dyno=web.1 connect=0ms service=37ms status=200 bytes=942
+2016-08-23T11:50:36.656781+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=5c4a30be-8020-4fef-89e9-dcb732418407 fwd="49.207.181.55" dyno=web.1 connect=1ms service=42ms status=200 bytes=942
+2016-08-23T11:51:15.408124+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=2ca2707a-4a57-4053-be0d-440f28203c0f fwd="49.207.181.55" dyno=web.1 connect=0ms service=33ms status=200 bytes=942
+2016-08-23T11:51:15.336015+00:00 app[web.1]: { ok: 0, n: 0, nModified: 0 }
+2016-08-23T12:18:47.746410+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=d93926a5-de27-4233-bd14-42ea77288e57 fwd="49.207.181.55" dyno=web.1 connect=0ms service=63ms status=200 bytes=942
+2016-08-23T12:18:47.713707+00:00 app[web.1]:   n: 1,
+2016-08-23T12:18:47.713713+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 0, high_: 0 },
+2016-08-23T12:18:47.713706+00:00 app[web.1]:   nModified: 0,
+2016-08-23T12:18:47.713693+00:00 app[web.1]: { ok: 1,
+2016-08-23T12:18:47.713715+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T12:19:07.213885+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=7d2333de-5ff9-4764-9961-7c4a327a1a40 fwd="49.207.181.55" dyno=web.1 connect=1ms service=33ms status=200 bytes=942
+2016-08-23T12:19:57.520432+00:00 app[web.1]: { ok: 1,
+2016-08-23T12:19:57.520445+00:00 app[web.1]:   nModified: 1,
+2016-08-23T12:19:57.520446+00:00 app[web.1]:   n: 1,
+2016-08-23T12:19:57.520448+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 1, high_: 1471954797 },
+2016-08-23T12:19:57.520449+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T12:19:57.585238+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=621c72cf-2042-4156-8b35-9e6697cec021 fwd="49.207.181.55" dyno=web.1 connect=1ms service=98ms status=200 bytes=942
+2016-08-23T12:21:28.592181+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=4b781c24-9982-4cb9-ae9f-7ed4b4c87404 fwd="49.207.181.55" dyno=web.1 connect=0ms service=33ms status=200 bytes=942
+2016-08-23T12:21:41.706056+00:00 app[web.1]:   nModified: 0,
+2016-08-23T12:21:41.706057+00:00 app[web.1]:   n: 1,
+2016-08-23T12:21:41.706058+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 1, high_: 1471954797 },
+2016-08-23T12:21:41.706051+00:00 app[web.1]: { ok: 1,
+2016-08-23T12:21:41.706059+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T12:21:41.740412+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=756992d2-2d35-4898-8668-a549e78ac117 fwd="49.207.181.55" dyno=web.1 connect=0ms service=61ms status=200 bytes=942
+2016-08-23T12:22:25.247146+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=b5fdb996-a006-4823-9631-36a5cf4ae845 fwd="49.207.181.55" dyno=web.1 connect=0ms service=37ms status=200 bytes=942
+2016-08-23T12:22:34.226187+00:00 app[web.1]: { ok: 1,
+2016-08-23T12:22:34.226206+00:00 app[web.1]:   nModified: 0,
+2016-08-23T12:22:34.226207+00:00 app[web.1]:   n: 0,
+2016-08-23T12:22:34.226210+00:00 app[web.1]:   lastOp: Timestamp { _bsontype: 'Timestamp', low_: 1, high_: 1471954797 },
+2016-08-23T12:22:34.226211+00:00 app[web.1]:   electionId: 57a5d4246a05b3c9ca09203c }
+2016-08-23T12:22:34.280756+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=a87ff79a-88d5-43a2-a025-6de8a54f8ab8 fwd="49.207.181.55" dyno=web.1 connect=0ms service=62ms status=200 bytes=942
+2016-08-23T12:22:50.075080+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=92a1d6bb-bfaf-4407-badd-9fcf44b6203d fwd="49.207.181.55" dyno=web.1 connect=1ms service=35ms status=304 bytes=146
+2016-08-23T12:23:42.976661+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=bd64b6a9-ea2f-408c-ae92-c389444c2ae7 fwd="49.207.181.55" dyno=web.1 connect=1ms service=32ms status=200 bytes=942
+2016-08-23T12:24:19.563602+00:00 heroku[api]: Deploy e52bc5d by vcashik@gmail.com
+2016-08-23T12:24:19.563602+00:00 heroku[api]: Release v18 created by vcashik@gmail.com
+2016-08-23T12:24:19.815524+00:00 heroku[slug-compiler]: Slug compilation started
+2016-08-23T12:24:19.815535+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-08-23T12:24:20.266288+00:00 heroku[web.1]: Restarting
+2016-08-23T12:24:20.267299+00:00 heroku[web.1]: State changed from up to starting
+2016-08-23T12:24:21.551980+00:00 heroku[web.1]: Starting process with command `node app.js`
+2016-08-23T12:24:23.309941+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-08-23T12:24:23.784460+00:00 app[web.1]: Listening on port54211
+2016-08-23T12:24:23.893227+00:00 heroku[web.1]: State changed from starting to up
+2016-08-23T12:24:24.057312+00:00 heroku[web.1]: Process exited with status 143
+2016-08-23T12:25:52.349406+00:00 app[web.1]: null
+2016-08-23T12:25:52.412142+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=7a616172-dcaf-4391-9773-ab75c88868a7 fwd="49.207.181.55" dyno=web.1 connect=0ms service=147ms status=200 bytes=942
+2016-08-23T12:26:43.928423+00:00 app[web.1]: null
+2016-08-23T12:26:44.002593+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=ab05e3bf-f2a6-4d33-9959-a6778c7a99ef fwd="49.207.181.55" dyno=web.1 connect=0ms service=138ms status=200 bytes=942
+2016-08-23T12:27:55.885880+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=7194e9a3-037a-43dd-8d79-e0839a3a6a2d fwd="49.207.181.55" dyno=web.1 connect=1ms service=38ms status=200 bytes=942
+2016-08-23T12:29:35.025638+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=327c097b-fda9-4bf5-9b92-c845032c3f9e fwd="49.207.181.55" dyno=web.1 connect=0ms service=35ms status=200 bytes=942
+2016-08-23T12:30:14.071450+00:00 app[web.1]: { _id: 57ba9a2b4f21bf03005fe750,
+2016-08-23T12:30:14.071476+00:00 app[web.1]:   moneySpent: 150,
+2016-08-23T12:30:14.071478+00:00 app[web.1]:   notes: 'F&B',
+2016-08-23T12:30:14.071479+00:00 app[web.1]:   timeStamp: '1471846958132',
+2016-08-23T12:30:14.071479+00:00 app[web.1]:   title: 'Subway',
+2016-08-23T12:30:14.071480+00:00 app[web.1]:   __v: 0 }
+2016-08-23T12:30:14.104650+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=8766f195-9a30-414a-bf32-aff4469adb78 fwd="49.207.181.55" dyno=web.1 connect=0ms service=79ms status=200 bytes=942
+2016-08-23T12:30:19.072207+00:00 app[web.1]: { _id: 57ba9a2b4f21bf03005fe750,
+2016-08-23T12:30:19.072225+00:00 app[web.1]:   timeStamp: '1471846958132',
+2016-08-23T12:30:19.072226+00:00 app[web.1]:   title: 'Subway',
+2016-08-23T12:30:19.072226+00:00 app[web.1]:   __v: 0 }
+2016-08-23T12:30:19.072224+00:00 app[web.1]:   notes: 'F&B',
+2016-08-23T12:30:19.072223+00:00 app[web.1]:   moneySpent: 150,
+2016-08-23T12:30:19.105447+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=dd49f266-15c9-46c3-8c02-a4ebbec7fa9b fwd="49.207.181.55" dyno=web.1 connect=0ms service=62ms status=200 bytes=942
+2016-08-23T12:30:36.465036+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=284901d2-c88c-4de1-b11f-4fdd8aeaad78 fwd="49.207.181.55" dyno=web.1 connect=0ms service=100ms status=200 bytes=942
+2016-08-23T12:30:36.379609+00:00 app[web.1]: null
+2016-08-23T12:34:54.934475+00:00 heroku[router]: at=info method=GET path="/" host=expensemanager-test.herokuapp.com request_id=e051f295-99a0-4fb7-824b-ee98c82b1791 fwd="49.207.181.55" dyno=web.1 connect=0ms service=38ms status=200 bytes=942
+2016-08-23T12:35:02.057618+00:00 app[web.1]: null
+2016-08-23T12:35:02.096031+00:00 heroku[router]: at=info method=POST path="/updateExpense" host=expensemanager-test.herokuapp.com request_id=4e33efa0-be4a-4ffc-9d5a-0bc73519b8b8 fwd="49.207.181.55" dyno=web.1 connect=18ms service=102ms status=200 bytes=942
