@@ -40,7 +40,9 @@ app.post('/updateExpense',function(req,res){
     }
     else if(data != null){
       console.log(data)
-      res.send(data)
+      Expense.find({},function(err,body){
+        res.send(body)
+      })
     }
     else {
       res.json("{\"result\":\"false\"}")
