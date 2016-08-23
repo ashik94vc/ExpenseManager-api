@@ -33,18 +33,17 @@ app.get('/',function(req,res){
   })
 })
 
-app.post('/updateExpense/:timestamp',function(req,res){
-  Expense.findOne({timeStamp: req.params.timestamp},function(err,data){
+app.post('/updateExpense',function(req,res){
+  Expense.findOneAndUpdate({_id: req.body._id},req.body,function(err,data){
     if(err) {
       console.log(err)
     }
     else if(data != null){
       console.log(data)
-      var data = new Expense(data)
-      console.log(data)
-      data.save(function(err,response) {
-        res.send(response)
-      })
+      res.send(data)
+    }
+    else {
+      res.json("{\"result\":\"false\"}")
     }
   })
 })
